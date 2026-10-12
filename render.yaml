@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: glossy-home-property-manager
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: VITE_NEON_AUTH_URL
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: NEON_AUTH_URL
+        sync: false
+      - key: NEON_AUTH_JWKS_URL
+        sync: false
+      - key: APP_ORIGIN
+        sync: false

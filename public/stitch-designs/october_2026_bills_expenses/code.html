@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#88948b", "surface-container-highest": "#30353e", "primary": "#77daaa", "on-error-container": "#ffdad6", "primary-fixed": "#93f6c4", "on-tertiary-container": "#fff6f3", "surface-container": "#1b2028", "outline-variant": "#3e4942", "on-primary-container": "#e3ffed", "primary-container": "#0d8259", "surface-dim": "#0f141c", "tertiary-container": "#b65623", "secondary-container": "#af8d11", "on-surface-variant": "#bdcac0", "background": "#0f141c", "on-tertiary-fixed": "#351000", "secondary": "#e9c349", "tertiary-fixed": "#ffdbcc", "secondary-fixed-dim": "#e9c349", "inverse-on-surface": "#2c3139", "tertiary-fixed-dim": "#ffb694", "on-primary-fixed": "#002113", "error": "#ffb4ab", "surface-container-high": "#252a33", "inverse-primary": "#006c49", "secondary-fixed": "#ffe088", "tertiary": "#ffb694", "on-error": "#690005", "on-secondary-container": "#342800", "on-secondary-fixed-variant": "#574500", "inverse-surface": "#dee2ee", "on-primary": "#003824", "surface-bright": "#343942", "surface-variant": "#30353e", "surface-container-low": "#171c24", "error-container": "#93000a", "surface-container-lowest": "#090e16", "surface": "#0f141c", "on-background": "#dee2ee", "on-primary-fixed-variant": "#005236", "on-secondary-fixed": "#241a00", "on-tertiary-fixed-variant": "#7b2f00", "on-tertiary": "#571f00", "on-secondary": "#3c2f00", "surface-tint": "#77daaa", "on-surface": "#dee2ee", "primary-fixed-dim": "#77daaa" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "margin": "1.25rem", "gutter": "1rem", "space-lg": "1rem", "space-2xl": "2rem" }, "fontFamily": { "headline-md": ["Syne"], "headline-xl": ["Syne"], "headline-xl-mobile": ["Syne"], "headline-lg": ["Syne"], "label-numeric": ["Space Grotesk"], "body-lg": ["Manrope"], "body-sm": ["Manrope"], "body-md": ["Manrope"], "label-meta": ["Space Grotesk"], "label-status": ["Space Grotesk"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-numeric": ["18px", { "lineHeight": "22px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-meta": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "500" }], "label-status": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Glossy Home Real Estate Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT4jgp1of9N11_mXTvfJWYBjL6PPPDBR5lGYeLnqAwxttqyvmKNP9YurkYn7pkXvj4SwQpPPAnRqOoeDlcwydN9XPyLwwl-zb_nHXMz3NRex8XDOTYdjRSJLVUaamBh7cpjz-R3KofOjWIq_GAkEWL_HmZZDFDD1tPm3ZLhcSYs8O2KARyUzL8sKVvW692QdxvBAwEnwtVLtSfrCDBBRGE34miWNvRaP5XrXzA2ywukD0rdEpRE-aQ"/><div class="flex flex-col min-w-0"><span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary">Glossy Home</span><h1 class="font-headline-md text-headline-md text-on-surface truncate">Bills And Expenses</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center relative rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></button><button aria-label="Account profile" class="w-11 h-11 flex items-center justify-center rounded-full ring-1 ring-secondary/30 hover:ring-secondary transition-all"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYGViNlwUqQGaZHhjpeSnSeo_Auo9IOSG7SR2s_Anv9bAlM3a64snK5sS7wZMbjjPN6TbEfw8TjnGvTm2uCl3YqCvhVlLn2OXqehNmX4RLUCfbL2JNJECxTAOounJC4byoKop9c9V0Drs3LGmP0-C27SagYSfz_THNIaaFoOTICHrKdiOTqLP4B7kVEW7dFt8iYnNdeCTxqvlwDo9bBXCAVIcXH1LkPcQMspfaCtPxpqPLeNfM0HtV"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin-mobile"><div class="flex flex-col w-full gap-space-lg">
+<section class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-lg shadow-xl">
+<div class="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-10 w-40 h-40 rounded-full bg-secondary/10 blur-2xl pointer-events-none"></div>
+<div class="relative flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+<span class="font-label-status text-label-status uppercase text-secondary">October 2026 Executive Summary</span>
+</div>
+<span class="bg-primary/15 text-primary text-label-meta font-label-meta px-2.5 py-1 rounded-full uppercase tracking-wider">Live Audit</span>
+</div>
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-body-sm text-on-surface-variant">Estimated Net Portfolio Margin</span>
+<div class="flex items-baseline justify-between gap-space-sm flex-wrap">
+<div class="flex items-baseline gap-1.5">
+<span class="font-label-numeric text-label-numeric text-primary font-bold">AED</span>
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold tracking-tight">115,700</span>
+</div>
+<div class="flex items-center gap-1 bg-primary/20 text-primary px-2.5 py-1 rounded-full">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span class="font-label-status text-label-status font-bold">77.9% Margin</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-space-md bg-surface-container rounded-lg p-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-base text-primary">arrow_downward_alt</span>
+<span class="font-body-sm text-body-sm">Rent Inflow</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-numeric text-label-numeric text-on-surface font-semibold">AED 148,500</span>
+</div>
+<span class="font-label-meta text-label-meta text-on-surface-variant">100% Units Billed</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-base text-tertiary">arrow_upward_alt</span>
+<span class="font-body-sm text-body-sm">Total Outflows</span>
+</div>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-numeric text-label-numeric text-tertiary font-semibold">AED 32,800</span>
+</div>
+<span class="font-label-meta text-label-meta text-error">1 Pending Due</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-meta text-label-meta uppercase text-on-surface-variant tracking-wider">Net Cash Retained Target</span>
+<span class="font-label-status text-label-status text-primary">AED 115.7k / 148.5k</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary h-full rounded-full transition-all duration-700" style="width: 77.9%;"></div>
+<div class="bg-tertiary h-full rounded-full transition-all duration-700" style="width: 22.1%;"></div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface">Category Breakdowns</h2>
+<span class="font-label-meta text-label-meta uppercase text-secondary">Filtered 15 Lines</span>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1" id="filterTabs">
+<button class="category-chip bg-primary text-on-primary font-label-status text-label-status px-3.5 py-2 rounded-full whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5 active:scale-95" onclick="filterBills('all', this)">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+<span>All (15)</span>
+</button>
+<button class="category-chip bg-surface-container-high text-on-surface-variant font-label-status text-label-status px-3.5 py-2 rounded-full whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5 active:scale-95" onclick="filterBills('addc', this)">
+<span class="material-symbols-outlined text-base text-secondary">bolt</span>
+<span>ADDC Utilities</span>
+</button>
+<button class="category-chip bg-surface-container-high text-on-surface-variant font-label-status text-label-status px-3.5 py-2 rounded-full whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5 active:scale-95" onclick="filterBills('wifi', this)">
+<span class="material-symbols-outlined text-base text-primary">wifi</span>
+<span>WiFi Internet</span>
+</button>
+<button class="category-chip bg-surface-container-high text-on-surface-variant font-label-status text-label-status px-3.5 py-2 rounded-full whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5 active:scale-95" onclick="filterBills('maintenance', this)">
+<span class="material-symbols-outlined text-base text-tertiary">home_repair_service</span>
+<span>Repairs</span>
+</button>
+</div>
+</section>
+<section class="flex flex-col gap-space-md" id="cardsContainer">
+<article class="flat-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm" data-tags="addc wifi maintenance">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-meta text-label-meta uppercase text-secondary tracking-wider">Deira Portside</span>
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface truncate">Flat 101 - Al Rigga Crown</h3>
+</div>
+<span class="bg-primary/15 text-primary font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          Settled
+        </span>
+</div>
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="bill-row addc flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary/15 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">ADDC Electricity &amp; Water</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Oct 12</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 1,450</span>
+</div>
+<div class="bill-row wifi flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/15 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">wifi</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Du Fiber 500Mbps High Speed</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Automated Autopay</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 480</span>
+</div>
+<div class="bill-row maintenance flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">ac_unit</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">AC Filter Servicing (Deep Flush)</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Oct 05</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 350</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1 bg-surface-container-lowest/60 p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta text-on-surface-variant uppercase">Total Outgoing</span>
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold">AED 2,280</span>
+</div>
+<div class="h-6 w-px bg-surface-container-highest"></div>
+<div class="flex flex-col text-right">
+<span class="font-label-meta text-label-meta text-primary uppercase">Net Flat Profit</span>
+<span class="font-label-numeric text-label-numeric text-primary font-bold">AED 11,720</span>
+</div>
+</div>
+</article>
+<article class="flat-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm" data-tags="addc wifi maintenance">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-meta text-label-meta uppercase text-secondary tracking-wider">Dubai Marina</span>
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface truncate">Flat 304 - Marina Heights</h3>
+</div>
+<span class="bg-primary/15 text-primary font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          Settled
+        </span>
+</div>
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="bill-row addc flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary/15 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">ADDC Electricity &amp; Water</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Direct Debit</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 1,820</span>
+</div>
+<div class="bill-row wifi flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/15 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">wifi</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Etisalat eLife Unlimited</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Voucher Confirmed</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 520</span>
+</div>
+<div class="bill-row maintenance flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">lock_reset</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Door Partition Lock Repair</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Hardware Replaced</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 200</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1 bg-surface-container-lowest/60 p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta text-on-surface-variant uppercase">Total Outgoing</span>
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold">AED 2,540</span>
+</div>
+<div class="h-6 w-px bg-surface-container-highest"></div>
+<div class="flex flex-col text-right">
+<span class="font-label-meta text-label-meta text-primary uppercase">Net Flat Profit</span>
+<span class="font-label-numeric text-label-numeric text-primary font-bold">AED 9,960</span>
+</div>
+</div>
+</article>
+<article class="flat-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm" data-tags="addc wifi maintenance">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-meta text-label-meta uppercase text-secondary tracking-wider">Commercial Master Node</span>
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface truncate">Building 1 - Glossy Tower</h3>
+</div>
+<span class="bg-secondary/15 text-secondary font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="material-symbols-outlined text-xs">domain</span>
+          Central Hub
+        </span>
+</div>
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="bill-row addc flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary/15 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">electric_meter</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">ADDC Master Substation Meter</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Cheque #8812</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 7,200</span>
+</div>
+<div class="bill-row wifi flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/15 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">router</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">High-Speed WiFi Dedicated Backbone</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Oct 01</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 1,800</span>
+</div>
+<div class="bill-row maintenance flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">plumbing</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Water Pump &amp; Pressure Valve Overhaul</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Annual Guarantee</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 2,400</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1 bg-surface-container-lowest/60 p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta text-on-surface-variant uppercase">Shared Building Sunk Cost</span>
+<span class="font-label-numeric text-label-numeric text-tertiary font-bold">AED 11,400</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-base text-secondary">verified</span>
+<span class="font-body-sm text-body-sm">Fully Cleared</span>
+</div>
+</div>
+</article>
+<article class="flat-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm" data-tags="addc wifi">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-meta text-label-meta uppercase text-secondary tracking-wider">Deira Center</span>
+<h3 class="font-body-lg text-body-lg font-bold text-on-surface truncate">Flat 502 - Deira City View</h3>
+</div>
+<span class="bg-error/20 text-error font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">error</span>
+          Action Required
+        </span>
+</div>
+<div class="flex flex-col gap-1.5 mt-1">
+<div class="bill-row addc flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-error"></div>
+<div class="flex items-center gap-2.5 min-w-0 pl-1.5">
+<div class="w-8 h-8 rounded-full bg-error/20 text-error flex items-center justify-center flex-shrink-0 animate-pulse">
+<span class="material-symbols-outlined text-base">notification_important</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">ADDC Electricity &amp; Water</span>
+<span class="font-label-meta text-label-meta text-error font-bold">Due in 4 days • Unpaid</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-error flex-shrink-0 font-bold">AED 1,150</span>
+</div>
+<div class="bill-row wifi flex items-center justify-between p-2.5 rounded-lg bg-surface-container-high">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/15 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-base">wifi</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Du Fiber Home 250Mbps</span>
+<span class="font-label-meta text-label-meta text-primary">Paid • Oct 03</span>
+</div>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface flex-shrink-0 font-bold">AED 480</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs mt-1 bg-surface-container-lowest/60 p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta text-on-surface-variant uppercase">Current Accrual</span>
+<span class="font-label-numeric text-label-numeric text-error font-bold">AED 1,630</span>
+</div>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg font-label-status text-label-status flex items-center gap-1 active:scale-95 transition-transform shadow-sm" onclick="openModalWithPrefill('Flat 502 - Deira City View', 'addc', '1150')">
+<span class="material-symbols-outlined text-xs">payments</span>
+          Quick Pay
+        </button>
+</div>
+</article>
+</section>
+<div class="fixed bottom-24 right-4 z-40">
+<button aria-label="Add Bill or Expense" class="h-14 px-5 rounded-full bg-primary text-on-primary font-body-lg text-body-lg font-semibold flex items-center gap-2 shadow-[0_8px_24px_rgba(13,130,89,0.45)] hover:scale-105 active:scale-95 transition-all" onclick="toggleModal(true)">
+<span class="material-symbols-outlined text-2xl">add</span>
+<span>Add Expense</span>
+</button>
+</div>
+<div class="fixed inset-0 z-50 flex items-end justify-center bg-surface-container-lowest/80 backdrop-blur-md hidden transition-opacity" id="expenseModal">
+<div class="w-full max-w-lg bg-surface-container rounded-t-2xl p-space-lg shadow-2xl flex flex-col gap-space-md max-h-[90vh] overflow-y-auto">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-meta text-label-meta uppercase text-secondary">Voucher Recording</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Record Expense</h3>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="toggleModal(false)">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" id="expenseForm" onsubmit="handleFormSubmit(event)">
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">Select Flat / Property Unit</label>
+<div class="relative">
+<select class="w-full h-12 bg-surface-container-high rounded-xl px-3.5 text-on-surface font-body-md text-body-md outline-none appearance-none" id="flatSelect" required="">
+<option value="Flat 101 - Al Rigga Crown">Flat 101 - Al Rigga Crown</option>
+<option value="Flat 304 - Marina Heights">Flat 304 - Marina Heights</option>
+<option value="Flat 502 - Deira City View">Flat 502 - Deira City View</option>
+<option value="Building 1 - Glossy Tower">Building 1 - Glossy Tower (Master Meter)</option>
+<option value="Flat 208 - Jumeirah Living">Flat 208 - Jumeirah Living</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">Expense Category</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="billType" type="radio" value="addc"/>
+<div class="h-11 rounded-xl bg-surface-container-high peer-checked:bg-primary peer-checked:text-on-primary text-on-surface-variant flex items-center justify-center gap-1 font-label-status text-label-status transition-colors">
+<span class="material-symbols-outlined text-sm">bolt</span>
+<span>ADDC</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="billType" type="radio" value="wifi"/>
+<div class="h-11 rounded-xl bg-surface-container-high peer-checked:bg-primary peer-checked:text-on-primary text-on-surface-variant flex items-center justify-center gap-1 font-label-status text-label-status transition-colors">
+<span class="material-symbols-outlined text-sm">wifi</span>
+<span>WiFi</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="billType" type="radio" value="maintenance"/>
+<div class="h-11 rounded-xl bg-surface-container-high peer-checked:bg-primary peer-checked:text-on-primary text-on-surface-variant flex items-center justify-center gap-1 font-label-status text-label-status transition-colors">
+<span class="material-symbols-outlined text-sm">build</span>
+<span>Repairs</span>
+</div>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">Amount (AED)</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-label-numeric text-label-numeric text-secondary font-bold">AED</span>
+<input class="w-full h-12 bg-surface-container-high rounded-xl pl-16 pr-3.5 text-on-surface font-label-numeric text-label-numeric font-bold outline-none placeholder:text-on-surface-variant/40" id="amountInput" min="1" placeholder="0.00" required="" step="any" type="number"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">Receipt Voucher Photo</label>
+<div class="cursor-pointer rounded-xl bg-surface-container-high p-space-md flex flex-col items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('receiptFile').click()">
+<input accept="image/*" class="hidden" id="receiptFile" onchange="previewReceipt(this)" type="file"/>
+<div class="flex flex-col items-center gap-1" id="uploadContent">
+<span class="material-symbols-outlined text-3xl text-secondary">add_a_photo</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Snap or Upload Receipt</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant">PNG, JPG, PDF up to 10MB</span>
+</div>
+<div class="hidden items-center gap-2 w-full" id="receiptPreview">
+<img class="w-12 h-12 rounded object-cover" data-alt="Close up photograph of a clear paper utility bill receipt printed in Dubai with official stamps and green checkmarks indicating complete payment status" id="previewImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRgyrYDTPCB-avxEqX7LlaOV_YlsehatCeUSgA5zurKHiB0u9ZUNj3q9nfFImgyON2-BNebceqIJAqUu8OPCb1TaGXRVv-31ZhuWHxLI_FQIcjezmGv0d4vqSFSqWcENFbNm_Aryn1i29wgfdgoD0XVEWOYRWIlCAYk3nLlVnbiMpqtABVlX1b1_c7jp7YZEddbz_1U1d9BHj8KgYM29gdVM8lF_lWlIFf01IFwezFwQ8CH3qrXcr9"/>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-body-sm text-body-sm text-on-surface truncate" id="fileName">receipt_oct2026.jpg</span>
+<span class="font-label-meta text-label-meta text-primary font-bold">File Attached</span>
+</div>
+<span class="material-symbols-outlined text-primary">check_circle</span>
+</div>
+</div>
+</div>
+<div class="flex gap-space-sm pt-space-xs">
+<button class="flex-1 h-12 rounded-xl bg-surface-container-high text-on-surface font-body-lg text-body-lg font-semibold active:scale-95 transition-transform" onclick="toggleModal(false)" type="button">Cancel</button>
+<button class="flex-1 h-12 rounded-xl bg-primary text-on-primary font-body-lg text-body-lg font-semibold shadow-lg shadow-primary/25 active:scale-95 transition-transform" type="submit">Save Bill</button>
+</div>
+</form>
+</div>
+</div>
+<div class="fixed top-20 right-4 left-4 z-50 bg-primary text-on-primary px-4 py-3 rounded-xl shadow-xl flex items-center justify-between transform -translate-y-20 opacity-0 transition-all pointer-events-none" id="toastNotification">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">verified</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toastMessage">Expense voucher logged successfully!</span>
+</div>
+</div>
+</div>
+<script>
+  function filterBills(type, btnElement) {
+    const tabs = document.querySelectorAll('.category-chip');
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-primary', 'text-on-primary');
+      tab.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+    });
+    btnElement.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+    btnElement.classList.add('bg-primary', 'text-on-primary');
+
+    const cards = document.querySelectorAll('.flat-card');
+    cards.forEach(card => {
+      const rows = card.querySelectorAll('.bill-row');
+      let visibleCount = 0;
+      rows.forEach(row => {
+        if (type === 'all' || row.classList.contains(type)) {
+          row.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          row.classList.add('hidden');
+        }
+      });
+      if (visibleCount > 0) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  function toggleModal(show) {
+    const modal = document.getElementById('expenseModal');
+    if (show) {
+      modal.classList.remove('hidden');
+    } else {
+      modal.classList.add('hidden');
+    }
+  }
+
+  function openModalWithPrefill(flat, type, amount) {
+    document.getElementById('flatSelect').value = flat;
+    const radios = document.getElementsByName('billType');
+    radios.forEach(r => {
+      if (r.value === type) r.checked = true;
+    });
+    document.getElementById('amountInput').value = amount;
+    toggleModal(true);
+  }
+
+  function previewReceipt(input) {
+    if (input.files && input.files[0]) {
+      document.getElementById('uploadContent').classList.add('hidden');
+      const preview = document.getElementById('receiptPreview');
+      preview.classList.remove('hidden');
+      preview.classList.add('flex');
+      document.getElementById('fileName').innerText = input.files[0].name;
+    }
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMessage');
+    msg.innerText = message;
+    toast.classList.remove('-translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('-translate-y-20', 'opacity-0');
+    }, 2800);
+  }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    toggleModal(false);
+    showToast('Expense recorded & synced to October 2026 Ledger!');
+    document.getElementById('expenseForm').reset();
+    document.getElementById('uploadContent').classList.remove('hidden');
+    document.getElementById('receiptPreview').classList.add('hidden');
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary"><div class="grid grid-cols-4 items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-2xl">grid_view</span><span class="font-label-status text-label-status tracking-wide mt-1">Overview</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="properties" href="#"><span class="material-symbols-outlined text-2xl">apartment</span><span class="font-label-status text-label-status tracking-wide mt-1">Flats</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="rooms-and-tenants" href="#"><span class="material-symbols-outlined text-2xl">vpn_key</span><span class="font-label-status text-label-status tracking-wide mt-1">Rooms</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] py-1 transition-colors text-primary" data-path="bills-and-expenses" href="#"><span class="material-symbols-outlined text-2xl">receipt_long</span><span class="font-label-status text-label-status tracking-wide mt-1">Expenses</span></a></div></nav></body></html>
