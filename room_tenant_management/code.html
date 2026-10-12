@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Syne:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#88948b", "surface-container-highest": "#30353e", "primary": "#77daaa", "on-error-container": "#ffdad6", "primary-fixed": "#93f6c4", "on-tertiary-container": "#fff6f3", "surface-container": "#1b2028", "outline-variant": "#3e4942", "on-primary-container": "#e3ffed", "primary-container": "#0d8259", "surface-dim": "#0f141c", "tertiary-container": "#b65623", "secondary-container": "#af8d11", "on-surface-variant": "#bdcac0", "background": "#0f141c", "on-tertiary-fixed": "#351000", "secondary": "#e9c349", "tertiary-fixed": "#ffdbcc", "secondary-fixed-dim": "#e9c349", "inverse-on-surface": "#2c3139", "tertiary-fixed-dim": "#ffb694", "on-primary-fixed": "#002113", "error": "#ffb4ab", "surface-container-high": "#252a33", "inverse-primary": "#006c49", "secondary-fixed": "#ffe088", "tertiary": "#ffb694", "on-error": "#690005", "on-secondary-container": "#342800", "on-secondary-fixed-variant": "#574500", "inverse-surface": "#dee2ee", "on-primary": "#003824", "surface-bright": "#343942", "surface-variant": "#30353e", "surface-container-low": "#171c24", "error-container": "#93000a", "surface-container-lowest": "#090e16", "surface": "#0f141c", "on-background": "#dee2ee", "on-primary-fixed-variant": "#005236", "on-secondary-fixed": "#241a00", "on-tertiary-fixed-variant": "#7b2f00", "on-tertiary": "#571f00", "on-secondary": "#3c2f00", "surface-tint": "#77daaa", "on-surface": "#dee2ee", "primary-fixed-dim": "#77daaa" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-xl": "1.5rem", "space-md": "0.75rem", "margin": "1.25rem", "gutter": "1rem", "space-lg": "1rem", "space-2xl": "2rem" }, "fontFamily": { "headline-md": ["Syne"], "headline-xl": ["Syne"], "headline-xl-mobile": ["Syne"], "headline-lg": ["Syne"], "label-numeric": ["Space Grotesk"], "body-lg": ["Manrope"], "body-sm": ["Manrope"], "body-md": ["Manrope"], "label-meta": ["Space Grotesk"], "label-status": ["Space Grotesk"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-numeric": ["18px", { "lineHeight": "22px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-meta": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "500" }], "label-status": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)] pt-safe"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Glossy Home Real Estate Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT4jgp1of9N11_mXTvfJWYBjL6PPPDBR5lGYeLnqAwxttqyvmKNP9YurkYn7pkXvj4SwQpPPAnRqOoeDlcwydN9XPyLwwl-zb_nHXMz3NRex8XDOTYdjRSJLVUaamBh7cpjz-R3KofOjWIq_GAkEWL_HmZZDFDD1tPm3ZLhcSYs8O2KARyUzL8sKVvW692QdxvBAwEnwtVLtSfrCDBBRGE34miWNvRaP5XrXzA2ywukD0rdEpRE-aQ"/><div class="flex flex-col min-w-0"><span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary">Glossy Home</span><h1 class="font-headline-md text-headline-md text-on-surface truncate">Rooms And Tenants</h1></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center relative rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></button><button aria-label="Account profile" class="w-11 h-11 flex items-center justify-center rounded-full ring-1 ring-secondary/30 hover:ring-secondary transition-all"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYGViNlwUqQGaZHhjpeSnSeo_Auo9IOSG7SR2s_Anv9bAlM3a64snK5sS7wZMbjjPN6TbEfw8TjnGvTm2uCl3YqCvhVlLn2OXqehNmX4RLUCfbL2JNJECxTAOounJC4byoKop9c9V0Drs3LGmP0-C27SagYSfz_THNIaaFoOTICHrKdiOTqLP4B7kVEW7dFt8iYnNdeCTxqvlwDo9bBXCAVIcXH1LkPcQMspfaCtPxpqPLeNfM0HtV"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin-mobile"><div class="flex flex-col w-full pb-6 space-y-space-md">
+<!-- TOP SELECTOR & METRIC BANNER -->
+<section class="bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">apartment</span>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary">Active Property</span>
+</div>
+<span class="bg-surface-container-high text-primary font-label-status text-label-status px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> 83% Occupied
+      </span>
+</div>
+<!-- Custom Select / Dropdown Trigger -->
+<button class="flex items-center justify-between bg-surface-container-high hover:bg-surface-container-highest transition-colors rounded-lg px-space-md py-space-sm w-full text-left" id="property-selector-btn">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-headline-md text-headline-md text-on-surface truncate">Flat 101 · Al Rigga Crown</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">6 Units Total (5 Partitions, 1 Studio)</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">expand_more</span>
+</button>
+<!-- Horizontal Quick-Switch Flats Carousel -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar pt-1">
+<button class="flex-shrink-0 bg-primary-container text-on-primary-container px-3 py-1.5 rounded-full flex items-center gap-1.5 font-label-status text-label-status">
+<span class="material-symbols-outlined text-sm">home_work</span> Flat 101 (6)
+      </button>
+<button class="flex-shrink-0 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant px-3 py-1.5 rounded-full flex items-center gap-1.5 font-label-status text-label-status transition-colors">
+<span class="material-symbols-outlined text-sm">apartment</span> Flat 204 (8)
+      </button>
+<button class="flex-shrink-0 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant px-3 py-1.5 rounded-full flex items-center gap-1.5 font-label-status text-label-status transition-colors">
+<span class="material-symbols-outlined text-sm">apartment</span> Flat 308 (4)
+      </button>
+<button class="flex-shrink-0 bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant px-3 py-1.5 rounded-full flex items-center gap-1.5 font-label-status text-label-status transition-colors">
+<span class="material-symbols-outlined text-sm">domain</span> Villa 12 (11)
+      </button>
+</div>
+</section>
+<!-- QUICK PERFORMANCE SNAPSHOT (Delight KPI strip) -->
+<section class="grid grid-cols-3 gap-space-xs">
+<div class="bg-surface-container rounded-lg p-2.5 flex flex-col">
+<span class="font-label-meta text-label-meta text-on-surface-variant">COLLECTED</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-numeric text-label-numeric text-primary">10,100</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant">AED</span>
+</div>
+<span class="font-body-sm text-[10px] text-primary/80 mt-1 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> 4 Paid
+      </span>
+</div>
+<div class="bg-surface-container rounded-lg p-2.5 flex flex-col">
+<span class="font-label-meta text-label-meta text-on-surface-variant">PENDING</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-numeric text-label-numeric text-secondary">2,500</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant">AED</span>
+</div>
+<span class="font-body-sm text-[10px] text-secondary mt-1 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">schedule</span> Due in 2d
+      </span>
+</div>
+<div class="bg-surface-container rounded-lg p-2.5 flex flex-col">
+<span class="font-label-meta text-label-meta text-on-surface-variant">VACANT POTENTIAL</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-numeric text-label-numeric text-tertiary">2,200</span>
+<span class="font-label-meta text-label-meta text-on-surface-variant">AED</span>
+</div>
+<span class="font-body-sm text-[10px] text-error mt-1 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">event_busy</span> 1 Unit Ready
+      </span>
+</div>
+</section>
+<!-- FILTER PILL TABS -->
+<section class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1" id="filter-container">
+<button class="filter-tab active flex-shrink-0 bg-secondary text-on-secondary px-3.5 py-1.5 rounded-full font-label-status text-label-status shadow-sm transition-all" data-filter="all">
+      All Units (6)
+    </button>
+<button class="filter-tab flex-shrink-0 bg-surface-container text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full font-label-status text-label-status transition-all" data-filter="partition">
+      Partitions (5)
+    </button>
+<button class="filter-tab flex-shrink-0 bg-surface-container text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full font-label-status text-label-status transition-all" data-filter="studio">
+      Studios (1)
+    </button>
+<button class="filter-tab flex-shrink-0 bg-surface-container text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full font-label-status text-label-status transition-all" data-filter="vacant">
+      Vacant (1)
+    </button>
+<button class="filter-tab flex-shrink-0 bg-surface-container text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full font-label-status text-label-status transition-all" data-filter="expiring">
+      Expiring Soon (1)
+    </button>
+</section>
+<!-- ROOM DETAIL LIST CARDS -->
+<section class="flex flex-col gap-space-md" id="room-list">
+<!-- Room S-1: Studio Room (Occupied) -->
+<article class="room-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm transition-all hover:shadow-lg relative overflow-hidden" data-category="studio occupied">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-2xl">single_bed</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Room S-1</h2>
+<span class="bg-secondary-container/30 text-secondary font-label-meta text-label-meta px-2 py-0.5 rounded-full">STUDIO</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Attached Bath &amp; Private Pantry</span>
+</div>
+</div>
+<span class="bg-primary/15 text-primary font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Occupied
+        </span>
+</div>
+<!-- Tenant & Financials -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-xs font-headline-md text-primary">
+              SA
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Sultan Al-Marzooqi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lease: Ongoing (12 Mo)</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<div class="flex items-baseline justify-end gap-1">
+<span class="font-label-numeric text-label-numeric text-on-surface">3,800</span>
+<span class="font-label-meta text-label-meta text-secondary">AED/mo</span>
+</div>
+<span class="bg-primary/10 text-primary font-label-meta text-label-meta px-1.5 py-0.5 rounded">Paid · Oct 2026</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1 font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">security</span> Security Deposit: 1,500 AED</span>
+<button class="text-secondary hover:text-on-surface flex items-center gap-0.5 text-xs font-semibold">
+<span>Contract</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Room P-1: Partition Room (Occupied) -->
+<article class="room-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm transition-all hover:shadow-lg" data-category="partition occupied">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-2xl">meeting_room</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Room P-1</h2>
+<span class="bg-surface-container-high text-on-surface-variant font-label-meta text-label-meta px-2 py-0.5 rounded-full">PARTITION</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Standard Partition Unit</span>
+</div>
+</div>
+<span class="bg-primary/15 text-primary font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Occupied
+        </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-xs font-headline-md text-primary">
+              MH
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Md. Tareq Hasan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lease Till: Jan 2027</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<div class="flex items-baseline justify-end gap-1">
+<span class="font-label-numeric text-label-numeric text-on-surface">2,200</span>
+<span class="font-label-meta text-label-meta text-secondary">AED/mo</span>
+</div>
+<span class="bg-primary/10 text-primary font-label-meta text-label-meta px-1.5 py-0.5 rounded">Paid · Oct 2026</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1 font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">lock_clock</span> Deposit: AED 1,000</span>
+<div class="flex items-center gap-2">
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Message Tenant">
+<span class="material-symbols-outlined text-lg">chat</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Download Receipt">
+<span class="material-symbols-outlined text-lg">receipt_long</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Room P-2: Partition Room (Occupied) -->
+<article class="room-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm transition-all hover:shadow-lg" data-category="partition occupied">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-2xl">meeting_room</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Room P-2</h2>
+<span class="bg-surface-container-high text-on-surface-variant font-label-meta text-label-meta px-2 py-0.5 rounded-full">PARTITION</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Standard Partition Unit</span>
+</div>
+</div>
+<span class="bg-primary/15 text-primary font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Occupied
+        </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-xs font-headline-md text-primary">
+              RS
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Rahul Sharma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lease Till: Dec 2026</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<div class="flex items-baseline justify-end gap-1">
+<span class="font-label-numeric text-label-numeric text-on-surface">2,100</span>
+<span class="font-label-meta text-label-meta text-secondary">AED/mo</span>
+</div>
+<span class="bg-primary/10 text-primary font-label-meta text-label-meta px-1.5 py-0.5 rounded">Paid · Oct 2026</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1 font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">verified</span> Verified Tenant</span>
+<div class="flex items-center gap-2">
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Message Tenant">
+<span class="material-symbols-outlined text-lg">chat</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Download Receipt">
+<span class="material-symbols-outlined text-lg">receipt_long</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Room P-3: Partition with Balcony (Payment Pending & Expiring Soon) -->
+<article class="room-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden transition-all hover:shadow-lg" data-category="partition expiring">
+<!-- Amber accent strip for payment warning -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start justify-between gap-space-sm pl-1">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-2xl">balcony</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Room P-3</h2>
+<span class="bg-surface-container-high text-on-surface-variant font-label-meta text-label-meta px-2 py-0.5 rounded-full">BALCONY</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Partition with Private Balcony</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 flex-shrink-0">
+<span class="bg-secondary/15 text-secondary font-label-status text-label-status px-2.5 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span> Payment Pending
+          </span>
+<span class="bg-tertiary-container/30 text-tertiary font-label-meta text-label-meta px-2 py-0.5 rounded-full flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[10px]">exit_to_app</span> Leaving 28 Oct 2026
+          </span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-2 pl-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-xs font-headline-md text-secondary">
+              KU
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Kamal Uddin</span>
+<span class="font-body-sm text-body-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">alarm</span> Due in 2 days
+              </span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<div class="flex items-baseline justify-end gap-1">
+<span class="font-label-numeric text-label-numeric text-secondary">2,500</span>
+<span class="font-label-meta text-label-meta text-secondary">AED/mo</span>
+</div>
+<button class="bg-secondary/20 hover:bg-secondary/30 text-secondary font-label-meta text-label-meta px-2 py-0.5 rounded transition-colors">
+              Send Reminder
+            </button>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1 font-body-sm text-body-sm">
+<span class="text-tertiary text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">campaign</span> Unit available in 14 days
+          </span>
+<button class="text-primary hover:underline text-xs font-semibold">Pre-list Room</button>
+</div>
+</div>
+</article>
+<!-- Room P-4: Partition Room (Occupied) -->
+<article class="room-card bg-surface-container rounded-xl p-space-md shadow-md flex flex-col gap-space-sm transition-all hover:shadow-lg" data-category="partition occupied">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-2xl">meeting_room</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Room P-4</h2>
+<span class="bg-surface-container-high text-on-surface-variant font-label-meta text-label-meta px-2 py-0.5 rounded-full">PARTITION</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Standard Partition Unit</span>
+</div>
+</div>
+<span class="bg-primary/15 text-primary font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Occupied
+        </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-xs font-headline-md text-primary">
+              AC
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Arif Chowdhury</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active Contract</span>
+</div>
+</div>
+<div class="text-right flex-shrink-0">
+<div class="flex items-baseline justify-end gap-1">
+<span class="font-label-numeric text-label-numeric text-on-surface">2,000</span>
+<span class="font-label-meta text-label-meta text-secondary">AED/mo</span>
+</div>
+<span class="bg-primary/10 text-primary font-label-meta text-label-meta px-1.5 py-0.5 rounded">Paid</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1 font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">wifi</span> ADDC &amp; WiFi Included</span>
+<div class="flex items-center gap-2">
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Message Tenant">
+<span class="material-symbols-outlined text-lg">chat</span>
+</button>
+<button class="p-1 text-on-surface-variant hover:text-primary transition-colors" title="Download Receipt">
+<span class="material-symbols-outlined text-lg">receipt_long</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Room P-5: Partition Room (Vacant / Ready to Rent) -->
+<article class="room-card bg-surface-container/70 rounded-xl p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden transition-all hover:bg-surface-container" data-category="partition vacant">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-error-container/20 flex items-center justify-center flex-shrink-0 text-error">
+<span class="material-symbols-outlined text-2xl">door_open</span>
+</div>
+<div class="min-w-0 flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-md text-headline-md text-on-surface">Room P-5</h2>
+<span class="bg-surface-container-high text-on-surface-variant font-label-meta text-label-meta px-2 py-0.5 rounded-full">PARTITION</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cleaned, sanitized &amp; inspected</span>
+</div>
+</div>
+<span class="bg-error-container/30 text-error font-label-status text-label-status px-2.5 py-1 rounded-full flex items-center gap-1 flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Vacant · Ready
+        </span>
+</div>
+<!-- Action Card Body -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Expected Monthly Rent</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-label-numeric text-label-numeric text-on-surface">2,200</span>
+<span class="font-label-meta text-label-meta text-secondary">AED/mo</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-xs text-primary bg-primary/10 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-sm">cleaning_services</span>
+<span>Turnkey Ready</span>
+</div>
+</div>
+<div class="pt-1 flex items-center gap-space-xs">
+<button class="flex-1 bg-primary-container hover:bg-primary-container/90 text-on-primary-container h-11 rounded-lg font-headline-md text-sm flex items-center justify-center gap-1.5 shadow-md active:scale-95 transition-all">
+<span class="material-symbols-outlined text-lg">person_add</span>
+<span>Assign Tenant</span>
+</button>
+<button class="w-11 h-11 bg-surface-container-high hover:bg-surface-container-highest rounded-lg flex items-center justify-center text-on-surface transition-colors" title="Share to Dubizzle / Bayut">
+<span class="material-symbols-outlined text-lg">share</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- EMPTY FILTER STATE (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center p-8 bg-surface-container rounded-xl text-center space-y-2" id="filter-empty-state">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">filter_alt_off</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">No Units Found</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">There are no rooms matching the selected filter criteria for this flat.</p>
+<button class="mt-2 text-primary text-xs font-semibold hover:underline" onclick="document.querySelector('[data-filter=all]').click()">
+      Reset Filters
+    </button>
+</div>
+<!-- STICKY / BOTTOM PRIMARY UTILITY DUAL ACTION BAR -->
+<section class="sticky bottom-20 z-30 pt-2">
+<div class="bg-surface-container-high/95 backdrop-blur-md p-2.5 rounded-xl shadow-xl flex items-center gap-space-sm">
+<button class="flex-1 bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary h-12 rounded-xl font-headline-md text-sm flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+<span>Add Unit</span>
+</button>
+<button class="flex-1 bg-surface-container hover:bg-surface-container-highest text-secondary h-12 rounded-xl font-headline-md text-sm flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all" id="export-btn">
+<span class="material-symbols-outlined text-xl">ios_share</span>
+<span>Export List</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  // Simple Filter micro-interaction
+  const filterButtons = document.querySelectorAll('.filter-tab');
+  const cards = document.querySelectorAll('.room-card');
+  const emptyState = document.getElementById('filter-empty-state');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Toggle styles
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-secondary', 'text-on-secondary');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-secondary', 'text-on-secondary');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+      const filter = btn.getAttribute('data-filter');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const category = card.getAttribute('data-category') || '';
+        if (filter === 'all' || category.includes(filter)) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    });
+  });
+
+  // Export Confirmation Micro-toast
+  const exportBtn = document.getElementById('export-btn');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      const origText = exportBtn.innerHTML;
+      exportBtn.innerHTML = `<span class="material-symbols-outlined text-xl text-primary animate-spin">sync</span> <span>Exporting...</span>`;
+      setTimeout(() => {
+        exportBtn.innerHTML = `<span class="material-symbols-outlined text-xl text-primary">done_all</span> <span>Ready!</span>`;
+        setTimeout(() => {
+          exportBtn.innerHTML = origText;
+        }, 1500);
+      }, 700);
+    });
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary"><div class="grid grid-cols-4 items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-2xl">grid_view</span><span class="font-label-status text-label-status tracking-wide mt-1">Overview</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="properties" href="#"><span class="material-symbols-outlined text-2xl">apartment</span><span class="font-label-status text-label-status tracking-wide mt-1">Flats</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] py-1 transition-colors text-primary" data-path="rooms-and-tenants" href="#"><span class="material-symbols-outlined text-2xl">vpn_key</span><span class="font-label-status text-label-status tracking-wide mt-1">Rooms</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="bills-and-expenses" href="#"><span class="material-symbols-outlined text-2xl">receipt_long</span><span class="font-label-status text-label-status tracking-wide mt-1">Expenses</span></a></div></nav></body></html>
