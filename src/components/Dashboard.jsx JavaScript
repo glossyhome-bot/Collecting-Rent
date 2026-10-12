@@ -1,0 +1,23 @@
+import React from 'react';
+
+export default function Dashboard() {
+  return (
+    <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+      <h2 className="text-lg font-semibold mb-4">Monthly Financial Overview</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+          <p className="text-sm text-green-600 font-medium">Total Collection</p>
+          <p className="text-2xl font-bold text-green-700">AED 17,000</p>
+        </div>
+        <div className="p-4 bg-red-50 rounded-lg border border-red-200">
+          <p className="text-sm text-red-600 font-medium">Total Expenses (ADDC/WiFi)</p>
+          <p className="text-2xl font-bold text-red-700">AED 2,672</p>
+        </div>
+        <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <p className="text-sm text-blue-600 font-medium">Net Balance</p>
+          <p className="text-2xl font-bold text-blue-700">AED 14,328</p>
+        </div>
+      </div>
+    </div>
+  );
+}
